@@ -1,266 +1,329 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manuseio de Produtos Químicos</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-      }
-    </style>
-  </head>
-  <body class="bg-white text-gray-800 font-sans">
-    <!-- HEADER (OCULTO NA PRIMEIRA PÁGINA) -->
-    <header
-      id="mainHeader"
-      class="w-full px-4 py-2 bg-gray-100 flex justify-between items-center border-b border-gray-300 fixed top-0 z-10 hidden"
-    >
-      <div class="flex items-center gap-2">
-        <img
-          src="./img/ORIGINAL_PNG.png"
-          alt="Logo"
-          class="h-12 w-12 object-contain"
-        />
-      </div>
-      <div class="text-xs text-right text-gray-600">
-        <p><strong>Emissão:</strong> 17/07/2025</p>
-        <p><strong>Revisão:</strong> ________</p>
-        <p><strong>Nº Rev.:</strong> ________</p>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientação para Prestadores de Serviços - Manuseio Seguro de Produtos Químicos</title>
+    <meta name="description" content="Guia completo de segurança para manuseio de produtos químicos na indústria alimentícia">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./img/ORIGINAL_PNG.png" alt="logo" width="70px">
+                </div>
+                <div>
+                  <p><strong>Emissão:</strong> 17/07/2025</p>
+                  <p><strong>Revisão:</strong> ________</p>
+                  <p><strong>Nº Rev.:</strong> ________</p>
+                </div>
+
+            </div>
+        </div>
     </header>
 
-    <!-- CONTAINER GERAL -->
-    <div id="container" class="w-full">
-      <!-- CAPA -->
-      <div
-        class="section min-h-[100dvh] flex flex-col justify-center items-center text-center px-6"
-        id="sec1"
-      >
-        <div class="flex items-center gap-2">
-          <img
-            src="./img/ORIGINAL_PNG.png"
-            alt="Logo"
-            class="h-40 w-40 object-contain"
-          />
+    <nav class="nav" id="nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="#definicao" class="nav-link">Definição</a></li>
+                <li><a href="#riscos" class="nav-link">Riscos</a></li>
+                <li><a href="#procedimentos" class="nav-link">Procedimentos</a></li>
+                <li><a href="#epi" class="nav-link">EPIs</a></li>
+                <li><a href="#descarregamento" class="nav-link">Descarregamento</a></li>
+                <li><a href="#emergencia" class="nav-link">Emergência</a></li>
+                <li><a href="#disposicoes" class="nav-link">Disposições</a></li>
+            </ul>
         </div>
-        <div class="max-w-md py-4">
-          <p class="text-xl font-bold text-gray-700 mb-2">
-            Orientação para Prestadores de Serviços - Manuseio Seguro de
-            Produtos Químicos
-          </p>
-          <p class="text-sm text-gray-500 mb-6 py-4">
-            Indústria Alimentícia – Abatedouro de Aves - C.Vale
-          </p>
-          <button
-            onclick="startDocument()"
-            class="bg-blue-600 text-white px-6 py-4 rounded"
-          >
-            Iniciar Leitura
-          </button>
+    </nav>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="emoji">🧪</span>
+                        Orientação para Prestadores de Serviços
+                        <span class="subtitle">Manuseio Seguro de Produtos Químicos</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Aplicável ao setor de Gestão Ambiental e Utilidades | Indústria Alimentícia – Abatedouro de Aves
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#definicao" class="btn btn-primary">Começar Leitura</a>
+                        <a href="#emergencia" class="btn btn-secondary">Emergência</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="definicao" class="section">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">
+                        <span class="emoji">📌</span>
+                        1. Definição e Aplicação
+                    </h2>
+                </header>
+                <div class="content-grid">
+                    <div class="content-card">
+                        <h3>O que é um Produto Químico?</h3>
+                        <p>Produto químico é toda substância (ou mistura) com propriedades físico-químicas controladas, empregada no tratamento de água, efluentes, higienização, desinfecção e controle de processos ambientais.</p>
+                    </div>
+                    <div class="content-card highlight">
+                        <h3>Importância na Indústria Alimentícia</h3>
+                        <p>Na indústria alimentícia, produtos químicos são críticos e devem ser tratados com <strong>máxima responsabilidade</strong>, garantindo a <strong>segurança dos trabalhadores</strong> e a <strong>proteção da produção</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="riscos" class="section section-alt">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">
+                        <span class="emoji">🚛</span>
+                        2. Recebimento via Caminhão-Tanque – Riscos Potenciais
+                    </h2>
+                    <p class="section-description">Durante operações de descarga, transferência e manuseio, os principais riscos são:</p>
+                </header>
+                <div class="risks-grid">
+                    <div class="risk-card">
+                        <span class="risk-icon">🔸</span>
+                        <h3>Gotejamento ou Respingo</h3>
+                        <p>Na conexão e desconexão de mangueiras</p>
+                    </div>
+                    <div class="risk-card">
+                        <span class="risk-icon">🔸</span>
+                        <h3>Vazamentos</h3>
+                        <p>Em válvulas, flanges ou linhas de transferência</p>
+                    </div>
+                    <div class="risk-card">
+                        <span class="risk-icon">🔸</span>
+                        <h3>Contato Direto</h3>
+                        <p>Com a pele ou olhos durante o manuseio</p>
+                    </div>
+                    <div class="risk-card">
+                        <span class="risk-icon">🔸</span>
+                        <h3>Inalação de Vapores</h3>
+                        <p>Corrosivos ou tóxicos ao abrir tampas ou respiros</p>
+                    </div>
+                    <div class="risk-card">
+                        <span class="risk-icon">🔸</span>
+                        <h3>Reação Química</h3>
+                        <p>Indesejada (incompatibilidade com resíduos)</p>
+                    </div>
+                    <div class="risk-card">
+                        <span class="risk-icon">🔸</span>
+                        <h3>Danos Ambientais</h3>
+                        <p>Em caso de derramamento não contido</p>
+                    </div>
+                </div>
+                <div class="alert alert-warning">
+                    <span class="alert-icon">⚠️</span>
+                    <div class="alert-content">
+                        <strong>Importante:</strong> o local de descarga deve possuir <strong>bacia de contenção</strong> e acesso imediato a <strong>chuveiro de emergência e lava-olhos operantes</strong>.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="procedimentos" class="section">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">
+                        <span class="emoji">🛡️</span>
+                        3. Procedimentos de Segurança – Passo a Passo
+                    </h2>
+                </header>
+                <div class="procedures-section">
+                    <h3 class="procedures-subtitle">
+                        <span class="emoji">✔️</span>
+                        Antes da Atividade
+                    </h3>
+                    <ol class="procedures-list">
+                        <li>Acione o <strong>Técnico de Segurança do Trabalho</strong> responsável</li>
+                        <li>Realize a <strong>APR – Análise Preliminar de Riscos</strong></li>
+                        <li>Confirme a <strong>identificação clara do produto</strong> (rótulo, número ONU, classe de risco)</li>
+                        <li>Em caso de dúvida, consulte a <strong>FDS – Ficha de Dados de Segurança</strong> do produto</li>
+                        <li>
+                            Inspecione:
+                            <ul class="sub-list">
+                                <li>Estado físico do caminhão (válvulas, conexões, selo de integridade)</li>
+                                <li>Condições das <strong>mangueiras e bombas de transferência</strong></li>
+                                <li>Presença de <strong>kit de contenção de emergências químicas</strong></li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section id="epi" class="section section-alt">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">
+                        <span class="emoji">🧰</span>
+                        4. EPI – Equipamento de Proteção Individual Obrigatório
+                    </h2>
+                    <p class="section-description">Todos os EPIs devem estar <strong>em conformidade com a FDS do produto</strong> a ser descarregado:</p>
+                </header>
+                <div class="epi-section">
+                    <h3 class="epi-subtitle">
+                        <span class="emoji">👷‍♂️</span>
+                        Obrigatórios para descarregamento:
+                    </h3>
+                    <div class="epi-grid">
+                        <div class="epi-card">
+                            <div class="epi-icon">🧤</div>
+                            <h4>Luvas Específicas</h4>
+                            <p>Para produto químico (PVC, nitrílica, etc.)</p>
+                        </div>
+                        <div class="epi-card">
+                            <div class="epi-icon">🥽</div>
+                            <h4>Proteção Ocular</h4>
+                            <p>Óculos de proteção ou protetor facial completo</p>
+                        </div>
+                        <div class="epi-card">
+                            <div class="epi-icon">🥼</div>
+                            <h4>Proteção Corporal</h4>
+                            <p>Avental químico ou capa impermeável</p>
+                        </div>
+                        <div class="epi-card">
+                            <div class="epi-icon">🥾</div>
+                            <h4>Calçado de Segurança</h4>
+                            <p>Bota impermeável e antiderrapante</p>
+                        </div>
+                        <div class="epi-card">
+                            <div class="epi-icon">😷</div>
+                            <h4>Proteção Respiratória</h4>
+                            <p>Respirador com filtro químico (quando indicado)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="descarregamento" class="section">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">
+                        <span class="emoji">📋</span>
+                        5. Durante o Descarregamento
+                    </h2>
+                </header>
+                <ol class="checklist">
+                    <li class="checklist-item">
+                        <span class="checklist-number">1</span>
+                        <div class="checklist-content">
+                            <h4>Sinalização e Segurança</h4>
+                            <p>Posicionar cones de segurança, placas de sinalização e extintor próximo</p>
+                        </div>
+                    </li>
+                    <li class="checklist-item">
+                        <span class="checklist-number">2</span>
+                        <div class="checklist-content">
+                            <h4>Supervisão Técnica</h4>
+                            <p>Garantir a presença de operador treinado e com supervisão técnica</p>
+                        </div>
+                    </li>
+                    <li class="checklist-item">
+                        <span class="checklist-number">3</span>
+                        <div class="checklist-content">
+                            <h4>Verificação de Equipamentos</h4>
+                            <p>Iniciar o processo <strong>apenas com os equipamentos inspecionados e operando corretamente</strong></p>
+                        </div>
+                    </li>
+                    <li class="checklist-item">
+                        <span class="checklist-number">4</span>
+                        <div class="checklist-content">
+                            <h4>Posicionamento Seguro</h4>
+                            <p>Evitar permanecer na linha de respingo das válvulas ou conexões</p>
+                        </div>
+                    </li>
+                    <li class="checklist-item">
+                        <span class="checklist-number">5</span>
+                        <div class="checklist-content">
+                            <h4>Monitoramento Contínuo</h4>
+                            <p>Monitorar constantemente possíveis <strong>vazamentos, ruídos anormais ou cheiro intenso</strong></p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="emergencia" class="section section-emergency">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">
+                        <span class="emoji">🆘</span>
+                        6. Ações em Caso de Acidente ou Exposição
+                    </h2>
+                </header>
+                <div class="emergency-grid">
+                    <div class="emergency-card">
+                        <div class="emergency-icon">🚿</div>
+                        <h3>Contato com Pele ou Olhos</h3>
+                        <p>Lavar imediatamente em chuveiro/lava-olhos por <strong>15 minutos</strong></p>
+                    </div>
+                    <div class="emergency-card">
+                        <div class="emergency-icon">🧑‍🚒</div>
+                        <h3>Em caso de emergência</h3>
+                        <p>Acionar o acionador manual para que o Bombeiro realize o pré atendimento e posteriormente direcionar ao ambulatório</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="disposicoes" class="section">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">
+                        <span class="emoji">🤔</span>
+                        7. Disposições Finais
+                    </h2>
+                </header>
+                <div class="final-warnings">
+                    <div class="warning-card font-size-3xl">
+                        <span class="warning-icon">✔️</span>
+                        <p class="safety-text"><strong>É proibido</strong> improvisar conexões, utilizar EPIs danificados ou não previstos na FDS</p>
+                    </div>
+                </div>
+                
+                <div class="safety-first">
+                    <h3 class="safety-title">
+                        <span class="emoji">🔒</span>
+                        Segurança em Primeiro Lugar
+                    </h3>
+                    <p class="safety-text">
+                        <strong>Lidar com produtos químicos exige preparo, atenção e responsabilidade.</strong><br>
+                        A negligência coloca em risco <strong>vidas, o meio ambiente e a integridade dos processos produtivos.</strong>
+                    </p>
+                </div>
+                <div class="completion-message">
+                    <div class="completion-icon">🎯</div>
+                    <h3 class="safety-title">Orientação Concluída</h3>
+                    <p class="safety-title">Você concluiu todas as orientações sobre manuseio seguro de produtos químicos. Mantenha sempre a segurança em primeiro lugar!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; DSEMT - Departamento de Segurança e Medicina do Trabalho. Todos os direitos reservados.</p>
+            </div>
         </div>
-      </div>
+    </footer>
 
-      <!-- PÁGINA 2 -->
-      <div
-        class="section min-h-[100dvh] hidden px-6 flex flex-col justify-center items-center text-center pt-28"
-        id="sec2"
-      >
-        <h1 class="text-xl font-bold mb-2 text-blue-700">
-          1. DEFINIÇÃO E APLICAÇÃO
-        </h1>
-        <p class="text-base mb-6">
-          <strong>Produto químico</strong> é toda substância (ou mistura) com
-          propriedades físico-químicas controladas, empregada no tratamento de
-          água, efluentes, higienização, desinfecção e controle de processos
-          ambientais.
-        </p>
-        <p class="text-base mb-6">
-          Na indústria alimentícia, produtos químicos são críticos e devem ser
-          tratados com <strong>máxima responsabilidade</strong>, garantindo a
-          <strong>segurança dos trabalhadores</strong> e a
-          <strong>proteção da produção</strong>.
-        </p>
-        <div class="flex gap-4">
-          <button
-            onclick="goToSection(1)"
-            class="bg-gray-400 text-white px-6 py-4 rounded"
-          >
-            Anterior
-          </button>
-          <button
-            onclick="goToSection(3)"
-            class="bg-blue-600 text-white px-6 py-4 rounded"
-          >
-            Próximo
-          </button>
-        </div>
-      </div>
+    <script src="./script.js"></script>
 
-      <!-- PÁGINA 3 -->
-      <div
-        class="section min-h-[100dvh] hidden px-2 flex flex-col justify-center items-center text-center pt-20"
-        id="sec3"
-      >
-        <h1 class="text-xl font-bold mb-2 text-blue-700">
-          2. RECEBIMENTO VIA CAMINHÃO-TANQUE – RISCOS POTENCIAIS
-        </h1>
-        <p class="text-base text-left mb-2">
-          Durante operações de descarga, transferência e manuseio, os principais
-          riscos são:
-        </p>
-        <ul class="text-base text-left mb-6">
-          <li>
-            • Gotejamento ou respingo na conexão e desconexão de mangueiras;
-          </li>
-          <li>• Vazamentos em válvulas, flanges ou linhas de transferência;</li>
-          <li>• Contato com a pele ou olhos durante o manuseio</li>
-          <li>
-            • Inalação de vapores corrosivos ou tóxicos ao abrir tampas ou
-            respiros
-          </li>
-          <li>
-            • Reação química indesejada (incompatibilidade com resíduos ou
-            outras substâncias)
-          </li>
-          <li>• Danos ambientais em caso de derramamento não contido</li>
-        </ul>
-        <p class="text-base text-left mb-2 text-blue-700">
-          ⚠️ Importante: o local de descarga deve possuir bacia de contenção e
-          acesso imediato a chuveiro de emergência e lava-olhos operantes.
-        </p>
-        <div class="flex gap-4">
-          <button
-            onclick="goToSection(2)"
-            class="bg-gray-400 text-white px-6 py-4 rounded"
-          >
-            Anterior
-          </button>
-          <button
-            onclick="goToSection(4)"
-            class="bg-blue-600 text-white px-6 py-4 rounded"
-          >
-            Próximo
-          </button>
-        </div>
-      </div>
-
-      <!-- PÁGINA 3 -->
-      <div
-        class="section min-h-[100dvh] hidden px-2 flex flex-col justify-center items-center text-center pt-20"
-        id="sec4"
-      >
-        <h1 class="text-xl font-bold mb-2 text-blue-700">
-          3. PROCEDIMENTOS DE SEGURANÇA – PASSO A PASSO
-        </h1>
-        <p class="text-base text-left mb-2">
-          <strong>Antes de iniciar a atividade:</strong>
-        </p>
-        <ul class="text-base text-left mb-6">
-          <li>
-            • Acione o
-            <strong>Técnico de Segurança do Trabalho responsável</strong>;
-          </li>
-          <li>
-            • Realize a abertura da<strong
-              >APR - Análise Preliminar de Riscos</strong
-            >;
-          </li>
-          <li>
-            • Confirme a
-            <strong>identificação clara do produto</strong> (rótulo, número ONU,
-            classe de risco);
-          </li>
-          <li>
-            • Em cado de dúvida, consulte a
-            <strong>FDS - Ficha de Dados de Segurança</strong> do produto;
-          </li>
-          <li>• <strong>Inspecione:</strong></li>
-          <li>
-            • Estado físico do caminhão (válvulas, conexões, selo de
-            integridade);
-          </li>
-          <li>
-            • Condições das
-            <strong>mangueiras e bombas de transferência</strong>;
-          </li>
-          <li>
-            • Presença de
-            <strong>kit de contenção de emergências químicas;</strong>
-          </li>
-        </ul>
-
-        <div class="flex gap-4">
-          <button
-            onclick="goToSection(3)"
-            class="bg-gray-400 text-white px-6 py-4 rounded"
-          >
-            Anterior
-          </button>
-          <button
-            onclick="goToSection(5)"
-            class="bg-blue-600 text-white px-6 py-4 rounded"
-          >
-            Próximo
-          </button>
-        </div>
-      </div>
-
-      <!-- PÁGINA 4 -->
-      <div
-        class="section min-h-[100dvh] hidden px-2 flex flex-col justify-center items-center text-center pt-20"
-        id="sec5"
-      >
-        <h1 class="text-xl font-bold mb-2 text-blue-700">
-          4. EPI – EQUIPAMENTO DE PROTEÇÃO INDIVIDUAL OBRIGATÓRIO
-        </h1>
-        <p class="text-base text-left mb-2">
-          Todos os EPIs devem estar
-          <strong>em conformidade com a FDS do produto</strong> a ser
-          descarregado:
-        </p>
-        <p class="text-base text-left mb-2">
-          <strong> Obrigatórios para descarregamento:</strong>
-        </p>
-        <ul class="text-base text-left mb-6">
-          <li>
-            • Luvas específicas para produto químico (PVC, nitrílica, etc.);
-          </li>
-          <li>• Óculos de proteção ou protetor facial completo;</li>
-          <li>• Avental químico ou capa impermeável;</li>
-          <li>• Bota de segurança impermeável e antiderrapante;</li>
-          <li>• Respirador com filtro químico (quando houver indicação);</li>
-        </ul>
-
-        <div class="flex gap-4">
-          <button
-            onclick="goToSection(4)"
-            class="bg-gray-400 text-white px-6 py-4 rounded"
-          >
-            Anterior
-          </button>
-          <!-- <button onclick="goToSection(5)" class="bg-blue-600 text-white px-6 py-4 rounded">Próximo</button> -->
-        </div>
-      </div>
-    </div>
-
-    <script>
-      function startDocument() {
-        document.getElementById('sec1').classList.add('hidden')
-        goToSection(2)
-        document.getElementById('mainHeader').classList.remove('hidden')
-      }
-
-      function goToSection(n) {
-        document
-          .querySelectorAll('.section')
-          .forEach(sec => sec.classList.add('hidden'))
-        const target = document.getElementById(`sec${n}`)
-        if (target) target.classList.remove('hidden')
-      }
-    </script>
-  </body>
+    
+</body>
 </html>
